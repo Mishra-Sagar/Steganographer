@@ -1,0 +1,96 @@
+h1 {
+  text-align : center;
+  font-family : Sans;
+  color : yellow;
+  padding : 20px;
+  display : block;
+}
+ 
+body {
+  background-image : url("https://i.stack.imgur.com/p9mUO.jpg");
+  background-attachment : fixed;
+}
+
+#wrapper {
+  width : 80%;
+  margin : 0px auto;
+  margin-bottom : 50px;
+  padding-bottom : 50px;
+  background-color : gray;
+  background: linear-gradient(#808080,#867979); 
+  opacity : .85;
+  
+}
+#forcanvas{
+  padding-top : 50px;
+}
+
+#can1,#can2,#can3,#can4,#can6,#can7 {
+  border : 2px solid #333333;
+  width : 49%;
+  border-radius: 10px;
+  background-color : #333333;
+  margin-left: 2px;
+  
+}
+#container {
+  margin-left : 35px;
+  margin-right : 35px;
+
+}
+#inputTable {
+  width : 100%;
+  margin-top : 30px;
+  background-color : #b7b7b7;
+  border-radius : 10px;
+}
+#inputTable td {
+  width : 49%;
+  border : 1px outset gray;
+  border-radius : 10px;
+}
+input{
+  font-size : 1.2em;
+  
+}
+h2 {
+  font-family : sans;
+}
+#t2{
+  width : 100%;
+  margin-top : 30px;
+  
+  border-radius : 10px;
+}
+#t2 td {
+  width : 49%;
+  
+}
+#forencryptedimage{
+  width : 50%;
+  margin : 50px auto;
+  
+  
+}
+.genen{
+  margin-left: 30%;
+}
+#can5{
+  width : 100%;
+   border : 2px solid #333333;
+  
+  border-radius: 10px;
+  background-color : #333333;
+  margin-left: 2px;
+  margin-top : 30px;
+}
+#t3{
+  width : 100%;
+  margin-top : 30px;
+  
+  border-radius : 10px;
+}
+#t3 td {
+  width : 49%;
+  
+}

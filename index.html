@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Steganographer</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+<div id="wrapper">
+<h1> Steganographer </h1>
+  <div id="container">
+    <table id="inputTable">
+      <tr>
+        <td>
+          <h2> Main Image</h2>
+        </td>
+          <td> <h2>To be Hidden</h2></td>
+      </tr>
+      <tr>
+        <td>
+        <input type="file" accept="image/*" multiple="false" onchange="uploadMainImage()" id="mimgfile">
+        </td>
+        <td>
+        <input type="file" accept="image/*" multiple="false" onchange="uploadToHideImage()" id="cimgfile">
+        </td>
+      </tr>
+    </table>
+  <div id="forcanvas">
+<canvas id="can1">
+  </canvas>
+  <canvas id="can2">
+  </canvas>
+  </div>
+    <table id="t2">
+      <tr>
+        <td>
+   <input type="button" value="Generate Intermediate Main Image" onclick="generateIMI()">
+    </td>
+          <td>
+   <input type="button" value="Generate Intermediate Hidden Image" onclick="generateIHI()">
+    </td>
+          </tr>
+          </table>
+      <div id="forcanvas">
+<canvas id="can3">
+  </canvas>
+  <canvas id="can4">
+  </canvas>
+  </div>
+    
+    <div id="forencryptedimage">
+      <input class="genen" type="button" value="Generate Encrypted Image" onclick="composite()">
+      <canvas id="can5">
+      </canvas>
+      <input type="button" value="Select For Decryption" onclick="selectfor()">
+    </div>
+    
+    <div style="height:10px; width:100%; background-color: #aa0000">
+      </div>
+      
+      <table id="t3">
+      <tr>
+        <td>
+          <h2> Main Image</h2>
+        </td>
+          <td> <h2>Decrypted Image</h2></td>
+      </tr>
+      <tr>
+        <td>
+        <input type="file" accept="image/*" multiple="false" onchange="uploadencryptedimage()"  id="enfile">
+        </td>
+        <td>
+        <input type="button" value="Generate" onclick="extract()">
+        </td>
+      </tr>
+    </table>
+  <div id="forcanvas">
+<canvas id="can6">
+  </canvas>
+  <canvas id="can7">
+  </canvas>
+  </div>
+      
+    <input class="genen" type="button" value="Reset" onchange="reset()">
+      
+      
+  </div>
+</div>
+
+<!--<canvas id="">
+  </canvas>-->
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
